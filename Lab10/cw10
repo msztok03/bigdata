@@ -1,0 +1,28 @@
+Zajęcia 10 
+
+Zadanie 1 
+
+Użycie funkcji dropFields i danych Nested.json 
+
+Usuń następujące atrybuty z columny:  
+
+"attribute1", "endGradeSeparation", "elevationAgainstDirection","formsPartOfPath" 
+ 
+
+Zadanie 2 
+
+Notatnik zadania.dbc 
+
+Dane w GitHub  
+
+Zapisz dane w formacie delta, stwórz dużo małych plików (kilkaset) i wykonaj jakąś akcję typu count(). Potem wykonaj `OPTIMZIE` i sprawdź, ile jest plików po optymalizacji, porównaj czas.  
+ 
+
+Zadanie 3 
+
+Wykorzystaj notatnik i zademonstruj jak działa funkcja ZORDER .  
+  
+
+Zadanie 4 
+
+Wykonaj, VACUUM na plikach z zadań 2 i 3. Zobacz czy zaobserwujesz jakąś zmianę. Jeśli nie to spróbuj nadpisać istniejące pliki. (zapisz df kilka krotnie z różną ilością partycji). 

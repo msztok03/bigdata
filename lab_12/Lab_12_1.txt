@@ -1,0 +1,17 @@
+Elementy Spark UI:
+Jobs: lista wszystkich zadańuruchomionych w ramach akcji Spark (count collect show), można podejrzeć, ile było zadań, ile trwały, czy zakończyły się sukcesem
+
+Stages: szczegóły dotyczące przekształceń – ile było etapów (stages), jakie przekształcenia, czy pojawił się shuffle
+
+Storage: informacje o cacheowanych DataFrameach/RDD (jeśli użyto .cache(), .persist()), pokazuje rozmiar i rozmieszczenie po klastrze
+
+Executors: lista executorów (procesów obliczeniowych); informacje o CPU, pamięci, zadaniach, błędach, informacje o dystrybucji danych – np. ile danych przetwarza każdy executor
+
+SQL/DataFrame: widok zapytań, planów logicznych i fizycznych (z Exchange, Filter, Scan itd.)
+
+
+
+Informacje o dystrybucji danych można znaleźć w Executors, Stages:
+Executors: w kolumnach jak Shuffle Read, Shuffle Write, Task Time, Input – to pokazuje, które partycje przetwarzał każdy executor
+
+Stages: można zobaczyć, które etapy wymagały shuffla i jak były podzielone dane
